@@ -1,18 +1,44 @@
-body{
+body {
     background: antiquewhite;
 }
 
-img{
+img {
     display: block;
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
-h1{
-    font-size: 16px;
+
+/*smartphone*/
+@media (min-width:400px) {
+    .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
 }
 
-.google-font{
+@media (min-width:700px) {
+    .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+    }
+}
+
+h1 {
+    font-size: clamp(50px, 3vw, 100px);
+}
+
+h2 {
+    font-size: clamp(16px, 3vw, 24px);
+}
+
+.h2num1{
+    
+}
+
+.google-font {
     font-family: 'vollkorn', serif;
 }

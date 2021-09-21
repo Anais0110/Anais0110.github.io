@@ -89,7 +89,9 @@ h2, p {
 
 .projects a,
 .about a,
-.contact a{
+.contact a,
+.retour a,
+.titre a {
     text-decoration: none;
     color: currentColor;
 }
@@ -111,4 +113,8 @@ a{
 
 a:hover{
     filter: none;
+}
+
+.videos{
+    justify-content: center;
 }

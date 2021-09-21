@@ -1,0 +1,114 @@
+body {
+    background: black;
+}
+
+/*gestion img*/
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.images1 {
+    display: block;
+    max-width: 70%;
+    height: auto;
+}
+
+.sousimages{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    justify-content: center;
+}
+
+.big{
+    grid-row: span 2;
+}
+
+.long{
+    grid-column: 1/3;
+}
+/*fin gestion images*/
+
+/*smartphone + page d'accueil*/
+@media (min-width:400px) {
+    .images,
+    .picture {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+}
+@media (min-width:700px) {
+    .images,
+    .picture {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/*fin page accueil*/
+
+/*projet1*/
+@media (min-width:300px) {
+    .sousimages,
+    .couv-ensemble {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+@media (min-width:700px) {
+    .sousimages,
+    .couv-ensemble {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+}
+@media (min-width:1000px) {
+    .sousimages,
+    .couv-ensemble {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+}
+/*fin projet1*/
+
+h1 {
+    font-size: clamp(50px, 4vw, 100px);
+    color:white
+}
+
+h2, p {
+    font-size: clamp(16px, 4vw, 24px);
+    color: white;
+}
+
+.projects a,
+.about a,
+.contact a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+.google-font {
+    font-family: 'vollkorn', serif;
+}
+
+.entete {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    text-align: left;
+}
+
+a{
+    transition: 0.4s;
+    filter: grayscale(1);
+}
+
+a:hover{
+    filter: none;
+}
